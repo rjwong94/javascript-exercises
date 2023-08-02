@@ -7,10 +7,26 @@
 <body>
   <script>
     // Your JavaScript goes here!
-    let max = 57
-    let actual = max - 13
-    let percentage = actual / max
-    console.log(percentage)
+    function add7(number) {
+      return number + 7;
+    }
+
+    let multiple = function(num1,num2) {
+      return num1 * num2;
+    }
+
+    let capitalize = function(sentance) {
+      return sentance.charAt(0).toUpperCase() + sentance.slice(1).toLowerCase();
+    }
+
+    function lastLetter(sentance) {
+      return sentance.slice(-1);
+    }
+
+    console.log(add7(3))
+    console.log(multiple(3,3))
+    console.log(capitalize("wElcoooMe to THE SHOW"))
+    console.log(lastLetter("abcd"))
   </script>
 </body>
 </html>
