@@ -5,28 +5,21 @@
   <title>Page Title</title>
 </head>
 <body>
+  <h1>
+    THE TITLE OF YOUR WEBPAGE
+  </h1>
+  <div id="container">
+  	<div class="content">
+      This is the glorious text-content!
+    </div>
+  </div>
+
   <script>
-    // Your JavaScript goes here!
-    function add7(number) {
-      return number + 7;
-    }
-
-    let multiple = function(num1,num2) {
-      return num1 * num2;
-    }
-
-    let capitalize = function(sentance) {
-      return sentance.charAt(0).toUpperCase() + sentance.slice(1).toLowerCase();
-    }
-
-    function lastLetter(sentance) {
-      return sentance.slice(-1);
-    }
-
-    console.log(add7(3))
-    console.log(multiple(3,3))
-    console.log(capitalize("wElcoooMe to THE SHOW"))
-    console.log(lastLetter("abcd"))
+    const container = document.querySelector('#container');
+    const para1 = document.createElement("p");
+    para1.textContent = "Hey I'm red!";
+    para1.style.color = 'red';
+    container.appendChild(para1);
   </script>
 </body>
 </html>
